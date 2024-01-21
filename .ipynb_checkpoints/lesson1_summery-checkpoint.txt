@@ -1,0 +1,33 @@
+רצוי ליבא את pandas כ pd - import pandas as pd
+
+רצוי לתת שם ל DataFrames כ df
+
+df = pd.read_csv('C:/Users/RetailAdmin/Desktop/PYTHON/pandas/lesson1/survey_results_public.csv') - מיבא את הקובץ סיסיבי וקח ניתן לעבוד איתו בענן תחת השם df
+
+
+df.head() - מראה את ה5 האלמנטים הראשונים "מראש הרשימה" אפשר לציין מספר בסוגריים כדי לקבל יותר  - Pd.head(10) דוגמה
+df.tail() - מראה את ה5 האלמנטים האחרונים "מסוף הרשימה" אפשר לציין מספר בסוגריים כדי לקבל יותר  - Pd.tail(10) דוגמה
+
+df.info() - מראה את השורות ואת כמות הנושאים/תאים/סוג המידע/זכרון
+
+<class 'pandas.core.frame.DataFrame'> - דוגמה 
+RangeIndex: 88883 entries, 0 to 88882
+Data columns (total 85 columns):
+
+ #   Column      Non-Null Count  Dtype  
+---  ------      --------------  -----  
+ 0   Respondent  88883 non-null  int64  
+ 1   MainBranch  88331 non-null  object 
+ 2   Hobbyist    88883 non-null  object 
+
+dtypes: float64(5), int64(1), object(79)
+memory usage: 57.6+ MB
+
+pd.set_option('display.max_****',****) -  משנה מצב תצוגה של המידע אפשר להציג את מספר האלמנטים שרוצים, בדוגמה למטה אפשר להחליף את נונ במספר 
+
+pd.set_option('display.max_colwidth', None)
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+
+df.shape - ללא סוגריים! מראה בצורה קלה את העמודות והערכים - דוגמה -  (88883, 85)
+
