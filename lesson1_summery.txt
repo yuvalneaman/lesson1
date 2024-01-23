@@ -31,3 +31,4 @@ pd.set_option('display.max_columns', None)
 
 df.shape - ללא סוגריים! מראה בצורה קלה את העמודות והערכים - דוגמה -  (88883, 85)
 
+df['Value'].value_counts() - value_counts() -  נותן את הערך הכי נפוץ
